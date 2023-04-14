@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CubeGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="style_cube.css">
+    <script src="cube.js" defer></script>
+</head>
+<body class="bg-light">
+
+<div class="container-fluid bg-light p-5">
+    <div class="row">
+        <h1 class="text-center">Игра Кубики</h1>
+        <div class="col-md-3">
+            <button id="put_3cubes" type="button" class="btn btn-secondary ButtonStyle">Бросить/Перебросить кубики
+            </button>
+            <br>
+            <button id="put_1cube" type="button" class="btn btn-outline-secondary ButtonStyle">Перебросить кубик №1
+            </button>
+            <br>
+            <button id="put_2cube" type="button" class="btn btn-outline-secondary ButtonStyle">Перебросить кубик №2
+            </button>
+            <br>
+            <button id="put_3cube" type="button" class="btn btn-outline-secondary ButtonStyle">Перебросить кубик №3
+            </button>
+            <br>
+            <img class="im2" src="game.png" alt="">
+        </div>
+
+        <div class="col-md-5">
+            <div class="row p-5">
+                <div id="cube_1" class="cub_3"></div>
+                <div id="cube_2" class="cub_3"></div>
+                <div id="cube_3" class="cub_3"></div>
+            </div>
+
+            <br>
+            <button type="button" class="btn btn-secondary ButtonCube">Конец хода</button>
+            <br>
+            <h3>Количество бросков</h3>
+            <h4 id="steps"></h4>
+            <br>
+            <h3>Итого выпало</h3>
+            <h4 id="result"></h4>
+            <h3 id="top">Осталось бросков</h3>
+            <h4 id="step"></h4>
+            <h2 id="hresult">Результат</h2>
+            <br>
+            <h3>Проверка на комбинацию</h3>
+            <h4 id="mas"></h4>
+
+        </div>
+        <div class="col-md-4">
+            <div class="rival">
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>
